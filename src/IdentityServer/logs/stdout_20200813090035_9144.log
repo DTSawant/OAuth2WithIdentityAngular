@@ -1,0 +1,7 @@
+[14:31:34 Information] 
+Starting host...
+
+Hosting environment: Development
+Content root path: L:\MyGitHub\AuthenticationIdentityServer\ClientCredentialsAuth\src\IdentityServer
+Now listening on: http://localhost:5000
+Application started. Press Ctrl+C to shut down.
