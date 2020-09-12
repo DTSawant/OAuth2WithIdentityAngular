@@ -1,0 +1,87 @@
+USE [IdentityServerDb]
+GO
+
+INSERT INTO [dbo].[Clients]
+           ([Enabled]
+           ,[ClientId]
+           ,[ProtocolType]
+           ,[RequireClientSecret]      
+          
+           ,[RequireConsent]
+           ,[AllowRememberConsent]
+           ,[AlwaysIncludeUserClaimsInIdToken]
+           ,[RequirePkce]
+           ,[AllowPlainTextPkce]
+           ,[RequireRequestObject]
+           ,[AllowAccessTokensViaBrowser]
+           ,[FrontChannelLogoutUri]
+           ,[FrontChannelLogoutSessionRequired]
+           ,[BackChannelLogoutUri]
+           ,[BackChannelLogoutSessionRequired]
+           ,[AllowOfflineAccess]
+           ,[IdentityTokenLifetime]
+           ,[AllowedIdentityTokenSigningAlgorithms]
+           ,[AccessTokenLifetime]
+           ,[AuthorizationCodeLifetime]
+           ,[ConsentLifetime]
+           ,[AbsoluteRefreshTokenLifetime]
+           ,[SlidingRefreshTokenLifetime]
+           ,[RefreshTokenUsage]
+           ,[UpdateAccessTokenClaimsOnRefresh]
+           ,[RefreshTokenExpiration]
+           ,[AccessTokenType]
+           ,[EnableLocalLogin]
+           ,[IncludeJwtId]
+           ,[AlwaysSendClientClaims]
+           ,[ClientClaimsPrefix]
+           ,[PairWiseSubjectSalt]
+           ,[Created]
+           ,[Updated]
+           ,[LastAccessed]
+           ,[UserSsoLifetime]
+           ,[UserCodeType]
+           ,[DeviceCodeLifetime]
+           ,[NonEditable])
+     VALUES
+           (1
+           ,'AngularClient'
+           ,''
+           ,0
+           ,0
+           ,0
+           ,1
+           ,1
+           ,0
+           ,0
+           ,0
+           ,null
+           ,1
+           ,null
+           ,1
+           ,1
+           ,60
+           ,''
+           ,60
+           ,300
+           ,null
+           ,2592000
+           ,1296000
+           ,0
+           ,0
+           ,1
+           ,0
+           ,1
+           ,1
+           ,1
+           ,null
+           ,null
+           ,'2020-08-31'
+           ,null
+           ,null
+           ,null
+           ,null
+           ,0
+           ,0)
+GO
+
+
